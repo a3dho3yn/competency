@@ -14,6 +14,7 @@ unsafe= true
 
 [markup.tableOfContents]
 startLevel = 1
+endLevel = 4
 
 [params]
 # (Optional, default light) Sets color theme: light, dark or auto.

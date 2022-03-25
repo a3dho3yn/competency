@@ -10,7 +10,7 @@
 
 [data-tooltip] {
   $triangle: .4rem;
-  $background-color: rgba(51,51,51,.9);
+  $background-color: rgba(51, 51, 51, .9);
 
   cursor: pointer;
   display: inline-block;
@@ -69,9 +69,9 @@
   }
 }
 
-h1,
-h2 {
+h1 {
   font-weight: 700;
+  font-size: 2.6em;
 }
 
 .page-navigation {
@@ -90,58 +90,28 @@ h2 {
 }
 
 .markdown {
-  line-height: 2;
+  line-height: 2.2;
 
-  h1,
   h2 {
     font-weight: 700;
+    font-size: 2em;
   }
 
-  blockquote {
-    width: 80%;
-    margin: 10px auto;
-    color: var(--gray-800);
-    border-inline-start: $padding-8 solid #78C0A8;
-    position: relative;
-    padding-right: 40px;
-    background-color: var(--gray-200);
-
-    :first-child {
-      margin-top: unset;
-    }
-
-    :last-child {
-      margin-bottom: unset;
-    }
-
-    span:not([data-tooltip]) {
-      display: block;
-      color: var(--body-font-color);
-      font-style: normal;
-      font-weight: bold;
-      margin-top: 1em;
-    }
+  h3 {
+    font-size: 1.5em;
+    font-weight: 600;
   }
 
-  blockquote::before {
-    font-family: Arial;
-    content: "\201D";
-    color: #78C0A8;
-    font-size: 4em;
-    position: absolute;
-    right: 10px;
-    top: -0.5em;
+  h4 {
+    font-size: 1.2em;
+    font-weight: 400;
   }
 
-  blockquote::after {
-    content: '';
-  }
-
-  em {
-    display: block;
+  .emphasis {
     width: 75%;
     margin: 10px auto;
     font-weight: 600;
+    font-size: large;
     position: relative;
   }
 
@@ -154,7 +124,81 @@ h2 {
     direction: ltr;
   }
 
-  i.caption {
+  i.note {
     color: var(--gray-500);
+  }
+
+  .title-en {
+    font-weight: 200;
+    font-size: 1.5em;
+  }
+
+  .subtitle {
+    font-size: larger;
+  }
+
+  .alt-names {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .alt-name {
+    background-color: var(--gray-100);
+    padding: 0 0.5em;
+    margin: 0 0.25em;
+    font-size: smaller;
+    border-radius: 0.5em;
+  }
+
+  .dimension {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin-top: 3em;
+  }
+
+  .dimension figure {
+    flex: 0 0 150px;
+    margin: 0 0 0 1em;
+  }
+
+  .dimension p {
+    margin-block: 0;
+  }
+
+  .dimension h4 {
+    margin-block: 0.5em;
+    font-weight: 600;
+  }
+
+  .scale th {
+    text-align: right;
+    color: var(--gray-500);
+    font-weight: 400;
+  }
+
+  .scale th:nth-child(2) {
+    width: 25%;
+  }
+
+  .scale td {
+    vertical-align: top;
+  }
+
+  .scale td:nth-child(1) {
+    direction: ltr;
+    text-align: center;
+  }
+
+  .scale td:nth-child(2) {
+    font-weight: 600;
+  }
+
+  .scale td:nth-child(3) {
+    font-size: 0.9em;
+  }
+
+  .scale p {
+    margin-block-end: 0;
   }
 }

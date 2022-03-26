@@ -115,8 +115,9 @@ h1 {
     position: relative;
   }
 
-  figcaption {
+  figcaption h4 {
     font-size: small;
+    font-weight: bolder;
   }
 
   .footnotes {
@@ -154,12 +155,12 @@ h1 {
     display: flex;
     flex-flow: row nowrap;
     align-items: top;
-    margin-top: 3em;
+    margin-top: 2em;
   }
 
   .dimension figure {
     flex: 0 0 5em;
-    margin: 0 0 0 1em;
+    margin: 0 0 0 2em;
   }
 
   .dimension p {
@@ -169,6 +170,7 @@ h1 {
   .dimension h4 {
     margin-block: 0.5em;
     font-weight: 600;
+    font-size: 1.2em;
   }
 
   .scale th {
@@ -202,6 +204,10 @@ h1 {
     margin-block-end: 0;
   }
 
+  .scale {
+    margin-bottom: 3em;
+  }
+
   .copied::before {
     content: 'copied';
   }
@@ -223,6 +229,12 @@ h1 {
     }
     100% {
       opacity: 0;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .book-columns>div {
+      min-width: 100%; 
     }
   }
 }

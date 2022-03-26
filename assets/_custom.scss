@@ -153,12 +153,12 @@ h1 {
   .dimension {
     display: flex;
     flex-flow: row nowrap;
-    align-items: center;
+    align-items: top;
     margin-top: 3em;
   }
 
   .dimension figure {
-    flex: 0 0 150px;
+    flex: 0 0 5em;
     margin: 0 0 0 1em;
   }
 

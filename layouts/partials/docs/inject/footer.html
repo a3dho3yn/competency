@@ -1,11 +1,30 @@
 {{ with .Site.Pages.Prev . }}
 <div class="text-left page-navigation">
-<a href="{{ .Permalink | relURL }}"> {{ .Title }} ◀︎ </a>
+    <a href="{{ .Permalink | relURL }}"> {{ .Title }} ◀︎ </a>
 </div>
 {{end}}
 
 <script>
-function toggleTooltip(el) {
-    el.classList.toggle("active");
-}
+    function toggleTooltip(el) {
+        el.classList.toggle("active");
+    }
+
+    window.addEventListener("load", function () {
+        document.querySelectorAll(".anchor").forEach((a) => {
+            a.addEventListener("click", async (e) => {
+                if (!navigator.clipboard) return;
+                try {
+                    await navigator.clipboard.writeText(e.target.href);
+                    const copied = document.createElement('div');
+                    copied.className = 'copied';
+                    setTimeout((c) => {
+                        c.remove();
+                    }, 5000, copied);
+                    e.target.after(copied);
+                } catch (err) {
+                    // nope
+                }
+            });
+        });
+    });
 </script>

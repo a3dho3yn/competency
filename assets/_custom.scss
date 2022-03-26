@@ -201,4 +201,28 @@ h1 {
   .scale p {
     margin-block-end: 0;
   }
+
+  .copied::before {
+    content: 'copied';
+  }
+  .copied {
+    background-color: var(--gray-200);
+    padding: 0.5em;
+    font-size: calc(8px + 0.25em);
+    border-radius: 5px;
+    font-weight: 400;
+    display: inline-block;
+    vertical-align: top; 
+    opacity: 0;
+    animation: hide ease-in-out 2s;   
+  }
+
+  @keyframes hide {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
 }

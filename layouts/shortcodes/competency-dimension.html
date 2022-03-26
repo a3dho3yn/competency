@@ -7,7 +7,7 @@
 {{ else if eq $type "intensity" }}
 {{- $title = "شدّت تمایل و کامل بودن رفتار" -}}
 {{ else if eq $type "breadth" }}
-{{- $title = "وسعت (دامنه تأثیر)" -}}
+{{- $title = "گستردگی" -}}
 {{ else if eq $type "complexity" }}
 {{- $title = "پیچیدگی" -}}
 {{ else if eq $type "effort" }}
@@ -20,14 +20,13 @@
 {{ if isset .Params 3 }}
 {{- $img = .Get 3 -}}
 {{ end }}
-
 <div class="dimension">
     <figure>
         <img src="/img/{{$type}}.png" >
     </figure>
 <div>
 
-#### {{ $dimension }}. {{ $title }}
+#### {{ if not (eq $dimension "") }}{{ $dimension }}. {{end}}{{ $title }}
 
 {{ .Inner | markdownify }}
 </div>

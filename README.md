@@ -1,5 +1,5 @@
 # شایستگی در کار [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
-ترجمه (و تلخیص) کتاب [Competence at Work: Models for Superior Performance](https://www.amazon.com/Competence-Work-Models-Superior-Performance/dp/047154809X)؛ کتابی مرجع در زمینه شایستگی‌های شغلی که به «Bible of Competency» معروف است.
+ترجمه (و تلخیص) کتاب [Competence at Work](https://www.amazon.com/Competence-Work-Models-Superior-Performance/dp/047154809X)؛ کتابی مرجع در زمینه شایستگی‌های شغلی که به «Bible of Competency» معروف است.
 
 در حال حاضر، بخش اول که به معرفی زمینه موضوع و تعریف شایستگی می‌پردازد و بخش دوم، که فهرستی از شایستگی‌ها ارائه می‌دهد، ترجمه شده‌اند.
 

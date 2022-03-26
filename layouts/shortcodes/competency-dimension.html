@@ -1,0 +1,34 @@
+{{- $dimension := .Get 0 -}}
+{{- $type := .Get 1 -}}
+{{- $img := "/img/{{$type}}.png" -}}
+{{- $title := "" -}}
+{{ if isset .Params 2 }}
+{{- $title = .Get 2 -}}
+{{ else if eq $type "intensity" }}
+{{- $title = "شدّت تمایل و کامل بودن رفتار" -}}
+{{ else if eq $type "breadth" }}
+{{- $title = "وسعت (دامنه تأثیر)" -}}
+{{ else if eq $type "complexity" }}
+{{- $title = "پیچیدگی" -}}
+{{ else if eq $type "effort" }}
+{{- $title = "تلاش (مازاد)" }}
+{{ else if eq $type "innovation" }}
+{{- $title = "نوآوری" -}}
+{{ else }}
+{{ end }}
+
+{{ if isset .Params 3 }}
+{{- $img = .Get 3 -}}
+{{ end }}
+
+<div class="dimension">
+    <figure>
+        <img src="/img/{{$type}}.png" >
+    </figure>
+<div>
+
+#### {{ $dimension }}. {{ $title }}
+
+{{ .Inner | markdownify }}
+</div>
+</div>

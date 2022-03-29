@@ -127,6 +127,21 @@ h1 {
     direction: rtl;
   }
 
+  .deck-wrapper {
+    padding-top: 56.25%;
+    position: relative;
+    height: 0;
+  }
+  
+  .deck-wrapper > iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+
+
   i.note {
     color: var(--gray-500);
   }
@@ -208,6 +223,11 @@ h1 {
 
   .scale {
     margin-bottom: 3em;
+  }
+
+  .scale-notes {
+    display: block;
+    margin-top: -3em;
   }
 
   .copied::before {

@@ -1,0 +1,14 @@
+{
+    "dimension": {
+	"scope": ["markdown"],
+      "prefix": ["cdim"],
+      "body": ["{{% competency-dimension \"${1|A,B,C|}\" \"${2|intensity,breadth,complexity,effort|}\" %}}", "$TM_SELECTED_TEXT", "{{% /competency-dimension %}}"],
+      "description": "competency dimension"
+    },
+	"competency": {
+		"scope": ["markdown"],
+		  "prefix": ["chead"],
+		  "body": ["{{% competency-heading \"${1:title}\" \"${2:en}\" \"${3:alias}\" %}}", "$TM_SELECTED_TEXT", "{{% /competency-heading %}}"],
+		  "description": "competency heading"
+		}
+  }

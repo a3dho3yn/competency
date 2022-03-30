@@ -9,7 +9,7 @@ slug: competence-dictionary
 {{< /hint >}}
 
 <div class="deck-wrapper">
-    <iframe src="https://slides.com/a3dho3yn/competencies/embed?style=dark" width="576" height="420" title="competencies" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="https://slides.com/a3dho3yn/competencies/embed?style=dark" width="576" height="420" title="competencies" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 </div>
 <small>اگر با اسلاید راحت نیستید، متن راهنما و هشدارها در ادامه آمده است</small>
 

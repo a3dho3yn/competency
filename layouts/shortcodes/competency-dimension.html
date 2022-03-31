@@ -14,18 +14,25 @@
 {{- $title = "تلاش" }}
 {{ else }}
 {{ end }}
-
+{{ if (ne $dimension "") }}
+{{ $title = printf "%s. %s" $dimension $title }}
+{{ end }}
 {{ if isset .Params 3 }}
 {{- $img = .Get 3 -}}
 {{ end }}
+{{- $innerSections := split .Inner "<!---->"}}
+<section>
 <div class="dimension">
     <figure>
         <img src="/img/{{$type}}.png" >
     </figure>
 <div>
 
-#### {{ if not (eq $dimension "") }}{{ $dimension }}. {{end}}{{ $title }}
+#### {{ $title }}
 
-{{ .Inner | markdownify }}
+{{ index $innerSections 0 | markdownify }}
 </div>
 </div>
+
+{{ index $innerSections 1 | markdownify }}
+</section>

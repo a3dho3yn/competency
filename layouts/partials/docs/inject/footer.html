@@ -9,9 +9,9 @@
         el.classList.toggle("active");
     }
 
-    window.addEventListener("load", function () {
-        document.querySelectorAll(".anchor").forEach((a) => {
-            a.addEventListener("click", async (e) => {
+    window.addEventListener('load', () => {
+        document.querySelectorAll('.anchor').forEach((a) => {
+            a.addEventListener('click', async (e) => {
                 if (!navigator.clipboard) return;
                 try {
                     await navigator.clipboard.writeText(e.target.href);
@@ -25,6 +25,31 @@
                     // nope
                 }
             });
+        });
+
+        const toc = document.querySelectorAll('.book-toc a');
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {                    
+                    toc.forEach((a) => {
+                        a.classList.remove('active');
+                    });
+                    const anchor = entry.target.id;
+                    const item = document.querySelector(`.book-toc a[href="#${anchor}"]`);
+                    if (item != null) {
+                        item.classList.add('active');
+                    };
+                }
+            });
+
+        }, {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.5
+        });
+
+        document.querySelectorAll(['h2','h3','h4']).forEach((h) => {
+            observer.observe(h);
         });
     });
 </script>

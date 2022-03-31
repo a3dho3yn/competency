@@ -1,16 +1,15 @@
 {{- $title := .Get 0 -}}
 {{- $enTitle := .Get 1 -}}
 {{- $alias := split (.Get 2) "," -}}
-
 <br />
+<section>
 
 ## {{ $title }}
-
 <span class="title-en">{{ $enTitle }}</span>
 
 {{ .Inner }}
-
 <div class="alt-names">
    <strong>اسامی دیگر: </strong>
    {{ range $alias }}<span class="alt-name">{{ . }}</span>{{ end }}
 </div>
+</section>

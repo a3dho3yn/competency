@@ -10,8 +10,21 @@
   }
 }
 
-.book-toc a.active {
-  font-weight: bolder;
+.book-toc a {
+  color: var(--gray-800);
+  
+  &.active {
+    font-weight: bolder;
+    color: var(--color-link);
+  }
+}
+
+.book-menu a {
+  color: var(--body-font-color);
+  &.active {
+    font-weight: bolder;
+    color: var(--color-link);
+  }
 }
 
 h1 {

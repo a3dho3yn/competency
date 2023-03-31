@@ -4,6 +4,8 @@ title = 'شایستگی در کار'
 
 theme = 'hugo-book'
 
+enableRobotsTXT = true
+
 defaultContentLanguage = 'fa'
 [languages]
   [languages.fa]

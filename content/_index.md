@@ -21,7 +21,7 @@ description: 'ترجمه و تلخیص کتاب Competence at Work: Model for Su
 
 <--->
 
-<img src="/cover.jpg" alt="Competence at Work - شایستگی در کار" height="600px" />
+<img src="/img/cover.jpg" alt="Competence at Work - شایستگی در کار" height="600px" />
 
 ### شایستگی در کار
 

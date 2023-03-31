@@ -1,19 +1,7 @@
 ---
 title: 'معرفی'
 weight: 1
-description: 'ترجمه و تلخیص کتاب Competence at Work'
-tags:
-  - شایستگی شغلی
-  - شایستگی
-  - competency
-  - competence at work
-  - منابع انسانی
-  - human resources
-  - رشد و توسعه
-  - کانون ارزیابی
-  - ارزیابی عملکرد
-  - مدل شایستگی
-  - شایستگی در کار
+description: 'ترجمه و تلخیص کتاب Competence at Work: Model for Superior Performance. کتابی مرجع در حوزه شایستگی‌ها در منابع انسانی'
 ---
 
 {{< columns >}}

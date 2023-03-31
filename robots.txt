@@ -1,3 +1,3 @@
 User-agent: *
 
-Sitemap: http://competency.a3dho3yn.ir/sitemap.xml
+Sitemap: https://competency.a3dho3yn.ir/sitemap.xml

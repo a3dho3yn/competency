@@ -33,7 +33,7 @@ tags:
 
 <--->
 
-<img src="cover.jpg" alt="Competence at Work - شایستگی در کار" height="600px" />
+<img src="/cover.jpg" alt="Competence at Work - شایستگی در کار" height="600px" />
 
 ### شایستگی در کار
 
